@@ -1,0 +1,633 @@
+{
+  "dietData": {
+    "2026-06-20": {
+      "foods": []
+    },
+    "2026-06-21": {
+      "foods": [
+        {
+          "id": 1782062014907,
+          "meal": "Breakfast",
+          "name": "sugar",
+          "calories": 90,
+          "carbs": 24,
+          "fat": 0,
+          "sugar": 24,
+          "protein": 0
+        },
+        {
+          "id": 1782235572921,
+          "meal": "Breakfast",
+          "name": "strawberries",
+          "calories": 50,
+          "carbs": 11,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 1,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782066621368,
+          "meal": "Lunch",
+          "name": "cereal",
+          "calories": 320,
+          "carbs": 72,
+          "fat": 2,
+          "sugar": 26,
+          "protein": 6
+        },
+        {
+          "id": 1782070007759,
+          "meal": "Snacks",
+          "name": "Diet Polar Soda",
+          "calories": 15,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 2,
+          "protein": 0
+        },
+        {
+          "id": 1782236290131,
+          "meal": "Dinner",
+          "name": "Hamburger Bun",
+          "calories": 220,
+          "carbs": 40,
+          "fat": 2,
+          "sugar": 0,
+          "protein": 6,
+          "cholesterol": 0,
+          "sodium": 360,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782235581540,
+          "meal": "Breakfast",
+          "name": "half and half (2tblsp)",
+          "calories": 120,
+          "carbs": 6,
+          "fat": 9,
+          "sugar": 0,
+          "protein": 3,
+          "cholesterol": 30,
+          "sodium": 45,
+          "saturatedFat": 6
+        },
+        {
+          "id": 1782080864237,
+          "meal": "Breakfast",
+          "name": "coffee",
+          "calories": 6,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 15,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782235590983,
+          "meal": "Lunch",
+          "name": "milk (1 cup)",
+          "calories": 149,
+          "carbs": 12,
+          "fat": 8,
+          "sugar": 0,
+          "protein": 8,
+          "cholesterol": 24,
+          "sodium": 105,
+          "saturatedFat": 5
+        },
+        {
+          "id": 1782081370652,
+          "meal": "Dinner",
+          "name": "ground chicken (4oz)",
+          "calories": 324,
+          "carbs": 0,
+          "fat": 18,
+          "sugar": 0,
+          "protein": 40,
+          "cholesterol": 196,
+          "sodium": 136,
+          "saturatedFat": 6
+        },
+        {
+          "id": 1782082570002,
+          "meal": "Snacks",
+          "name": "oatmeal rasin cookies (healthy)",
+          "calories": 45,
+          "carbs": 9,
+          "fat": 1.5,
+          "sugar": 6,
+          "protein": 1.5,
+          "cholesterol": 0,
+          "sodium": 18,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782084214216,
+          "meal": "Snacks",
+          "name": "diet polar soda",
+          "calories": 15,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 2,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782086644941,
+          "meal": "Snacks",
+          "name": "Fruit bar",
+          "calories": 60,
+          "carbs": 15,
+          "fat": 0,
+          "sugar": 15,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782087746123,
+          "meal": "Dinner",
+          "name": "roasted potatoes (1scoop)",
+          "calories": 252,
+          "carbs": 38,
+          "fat": 10,
+          "sugar": 2,
+          "protein": 4,
+          "cholesterol": 0,
+          "sodium": 1178,
+          "saturatedFat": 2
+        }
+      ]
+    },
+    "2026-06-22": {
+      "foods": [
+        {
+          "id": 1782136257658,
+          "meal": "Snacks",
+          "name": "Protein Powder",
+          "calories": 90,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 20,
+          "cholesterol": 0,
+          "sodium": 115,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782143311618,
+          "meal": "Breakfast",
+          "name": "coffee",
+          "calories": 8,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 20,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782235523118,
+          "meal": "Breakfast",
+          "name": "half and half (2tblsp)",
+          "calories": 120,
+          "carbs": 6,
+          "fat": 9,
+          "sugar": 0,
+          "protein": 3,
+          "cholesterol": 30,
+          "sodium": 45,
+          "saturatedFat": 6
+        },
+        {
+          "id": 1782236246394,
+          "meal": "Breakfast",
+          "name": "strawberries",
+          "calories": 50,
+          "carbs": 11,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 1,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782155406856,
+          "meal": "Breakfast",
+          "name": "sugar",
+          "calories": 112,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 28,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782224747805,
+          "meal": "Snacks",
+          "name": "oatmeal rasin cookies (healthy)",
+          "calories": 45,
+          "carbs": 9,
+          "fat": 1.5,
+          "sugar": 6,
+          "protein": 1.5,
+          "cholesterol": 0,
+          "sodium": 18,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782224721694,
+          "meal": "Dinner",
+          "name": "white rice",
+          "calories": 308,
+          "carbs": 66,
+          "fat": 0.6,
+          "sugar": 0,
+          "protein": 6,
+          "cholesterol": 0,
+          "sodium": 3,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782224734776,
+          "meal": "Dinner",
+          "name": "ground chicken (4oz)",
+          "calories": 324,
+          "carbs": 0,
+          "fat": 18,
+          "sugar": 0,
+          "protein": 40,
+          "cholesterol": 196,
+          "sodium": 136,
+          "saturatedFat": 6
+        },
+        {
+          "id": 1782170220767,
+          "meal": "Breakfast",
+          "name": "salt (1 dash)",
+          "calories": 0,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 775,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782224124884,
+          "meal": "Snacks",
+          "name": "fruit bar",
+          "calories": 60,
+          "carbs": 15,
+          "fat": 0,
+          "sugar": 15,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782224693739,
+          "meal": "Snacks",
+          "name": "popcorn (big bag)",
+          "calories": 312,
+          "carbs": 48,
+          "fat": 6,
+          "sugar": 0,
+          "protein": 12,
+          "cholesterol": 0,
+          "sodium": 240,
+          "saturatedFat": 0
+        }
+      ]
+    },
+    "2026-06-23": {
+      "foods": [
+        {
+          "id": 1782224859841,
+          "meal": "Breakfast",
+          "name": "sugar",
+          "calories": 48,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 12,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782235505841,
+          "meal": "Breakfast",
+          "name": "Banana",
+          "calories": 105,
+          "carbs": 27,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 1,
+          "cholesterol": 0,
+          "sodium": 1,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782238475596,
+          "meal": "Breakfast",
+          "name": "strawberries",
+          "calories": 50,
+          "carbs": 11,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 1,
+          "cholesterol": 0,
+          "sodium": 0,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782238517662,
+          "meal": "Breakfast",
+          "name": "coffee",
+          "calories": 8,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 0,
+          "cholesterol": 0,
+          "sodium": 20,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782238564040,
+          "meal": "Breakfast",
+          "name": "half and half (2tblsp)",
+          "calories": 160,
+          "carbs": 8,
+          "fat": 12,
+          "sugar": 0,
+          "protein": 4,
+          "cholesterol": 40,
+          "sodium": 60,
+          "saturatedFat": 8
+        },
+        {
+          "id": 1782242670879,
+          "meal": "Breakfast",
+          "name": "protein powder",
+          "calories": 90,
+          "carbs": 0,
+          "fat": 0,
+          "sugar": 0,
+          "protein": 20,
+          "cholesterol": 0,
+          "sodium": 115,
+          "saturatedFat": 0
+        },
+        {
+          "id": 1782242692599,
+          "meal": "Breakfast",
+          "name": "milk (1 cup)",
+          "calories": 149,
+          "carbs": 12,
+          "fat": 8,
+          "sugar": 0,
+          "protein": 8,
+          "cholesterol": 24,
+          "sodium": 105,
+          "saturatedFat": 5
+        }
+      ]
+    }
+  },
+  "settings": {
+    "calorieGoal": 2000,
+    "carbGoal": 275,
+    "fatGoal": 60,
+    "sugarGoal": 36,
+    "proteinGoal": 75,
+    "usdaApiKey": "WFdCrgwsbdUSlr6boguKi56xJbB6ZsKF5AJ8i1M0",
+    "cholesterolGoal": 300,
+    "sodiumGoal": 2300,
+    "satFatGoal": 20
+  },
+  "customFoods": {
+    "sugar": {
+      "calories": 16,
+      "carbs": 0,
+      "fat": 0,
+      "sugar": 4,
+      "protein": 0,
+      "cholesterol": 0,
+      "sodium": 0,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "diet polar soda": {
+      "calories": 15,
+      "carbs": 0,
+      "fat": 0,
+      "sugar": 2,
+      "protein": 0,
+      "serving": "1 serving (custom)"
+    },
+    "strawberries": {
+      "calories": 50,
+      "carbs": 11,
+      "fat": 0,
+      "sugar": 7,
+      "protein": 1,
+      "cholesterol": 0,
+      "sodium": 0,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "coffee cream & sugar": {
+      "calories": 72,
+      "carbs": 1,
+      "fat": 3,
+      "sugar": 1,
+      "protein": 1,
+      "serving": "1 serving (custom)"
+    },
+    "coffee w/sweetener": {
+      "calories": 42,
+      "carbs": 1,
+      "fat": 3,
+      "sugar": 1,
+      "protein": 1,
+      "serving": "1 serving (custom)"
+    },
+    "half and half (2tblsp)": {
+      "calories": 40,
+      "carbs": 2,
+      "fat": 3,
+      "sugar": 2,
+      "protein": 1,
+      "cholesterol": 10,
+      "sodium": 15,
+      "saturatedFat": 2,
+      "serving": "1 serving (custom)"
+    },
+    "milk (1 cup)": {
+      "calories": 149,
+      "carbs": 12,
+      "fat": 8,
+      "sugar": 12,
+      "protein": 8,
+      "cholesterol": 24,
+      "sodium": 105,
+      "saturatedFat": 5,
+      "serving": "1 serving (custom)"
+    },
+    "ground chicken (4oz)": {
+      "calories": 162,
+      "carbs": 0,
+      "fat": 9,
+      "sugar": 0,
+      "protein": 20,
+      "cholesterol": 98,
+      "sodium": 68,
+      "saturatedFat": 3,
+      "serving": "1 serving (custom)"
+    },
+    "popcorn": {
+      "calories": 125,
+      "carbs": 22,
+      "fat": 3,
+      "sugar": 0,
+      "protein": 1,
+      "serving": "1 serving (custom)"
+    },
+    "hamburger bun": {
+      "calories": 110,
+      "carbs": 20,
+      "fat": 1,
+      "sugar": 2,
+      "protein": 3,
+      "cholesterol": 0,
+      "sodium": 180,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "roasted potatoes (1scoop)": {
+      "calories": 126,
+      "carbs": 19,
+      "fat": 5,
+      "sugar": 1,
+      "protein": 2,
+      "cholesterol": 0,
+      "sodium": 589,
+      "saturatedFat": 1,
+      "serving": "1 serving (custom)"
+    },
+    "coffee": {
+      "calories": 2,
+      "carbs": 0,
+      "fat": 0,
+      "sugar": 0,
+      "protein": 0,
+      "cholesterol": 0,
+      "sodium": 5,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "oatmeal rasin cookies (healthy)": {
+      "calories": 15,
+      "carbs": 3,
+      "fat": 0.5,
+      "sugar": 2,
+      "protein": 0.5,
+      "cholesterol": 0,
+      "sodium": 6,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "fruit bar": {
+      "calories": 60,
+      "carbs": 15,
+      "fat": 0,
+      "sugar": 15,
+      "protein": 0,
+      "cholesterol": 0,
+      "sodium": 0,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "protein powder": {
+      "calories": 90,
+      "carbs": 0,
+      "fat": 0,
+      "sugar": 0,
+      "protein": 20,
+      "cholesterol": 0,
+      "sodium": 115,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "white rice": {
+      "calories": 308,
+      "carbs": 66,
+      "fat": 0.6,
+      "sugar": 0,
+      "protein": 6,
+      "cholesterol": 0,
+      "sodium": 3,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "salt (1 dash)": {
+      "calories": 0,
+      "carbs": 0,
+      "fat": 0,
+      "sugar": 0,
+      "protein": 0,
+      "cholesterol": 0,
+      "sodium": 155,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "popcorn (big bag)": {
+      "calories": 312,
+      "carbs": 48,
+      "fat": 6,
+      "sugar": 0,
+      "protein": 12,
+      "cholesterol": 0,
+      "sodium": 240,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    },
+    "banana": {
+      "calories": 105,
+      "carbs": 27,
+      "fat": 0,
+      "sugar": 14,
+      "protein": 1,
+      "cholesterol": 0,
+      "sodium": 1,
+      "saturatedFat": 0,
+      "serving": "1 serving (custom)"
+    }
+  },
+  "exerciseData": {
+    "2026-06-21": []
+  },
+  "weightLogs": [
+    {
+      "id": 1782170411472,
+      "date": "2026-06-22",
+      "weight": 216
+    }
+  ]
+}
