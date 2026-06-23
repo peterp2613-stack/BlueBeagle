@@ -314,12 +314,155 @@
         </div>
     </div>
 
-    <!-- Modals -->
+    <!-- Modals (full working versions) -->
     <div id="add-modal" onclick="if (event.target.id === 'add-modal') closeAddModal()" class="hidden fixed inset-0 bg-black/50 flex items-end lg:items-center justify-center z-[100]">
-        <!-- Full Add Food Modal content -->
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full lg:w-[520px] lg:rounded-3xl lg:m-4 rounded-t-3xl p-6">
+            <div class="flex justify-between items-center mb-5">
+                <h3 id="modal-title" class="font-semibold text-xl">Add Food</h3>
+                <button onclick="closeAddModal()" class="text-2xl text-slate-400 hover:text-slate-600">&times;</button>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <label class="text-sm font-medium text-slate-600">Food Name</label>
+                    <div class="relative mt-1">
+                        <input id="food-name" type="text" placeholder="e.g. Thomas english muffin" class="w-full border rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-400" oninput="showSuggestions()">
+                        <div id="suggestions" class="hidden absolute z-10 w-full mt-1 bg-white border rounded-2xl shadow-lg max-h-80 overflow-auto text-sm"></div>
+                    </div>
+                    <p id="serving-info" class="text-xs text-emerald-600 mt-1 hidden"></p>
+                </div>
+
+                <div id="servings-section" class="hidden">
+                    <label class="text-sm font-medium text-slate-600">Servings / Amount</label>
+                    <input id="servings" type="number" value="1" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm">
+                    <p class="text-xs text-slate-500 mt-1">Adjust this to scale nutrition</p>
+                </div>
+
+                <div>
+                    <label class="text-sm font-medium text-slate-600">Meal</label>
+                    <select id="meal-type" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm">
+                        <option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snacks</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div><label class="text-sm font-medium text-slate-600">Calories</label><input id="food-calories" type="number" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Carbs (g)</label><input id="food-carbs" type="number" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Fat (g)</label><input id="food-fat" type="number" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Sugar (g)</label><input id="food-sugar" type="number" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Protein (g)</label><input id="food-protein" type="number" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Cholesterol (mg)</label><input id="food-cholesterol" type="number" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Sodium (mg)</label><input id="food-sodium" type="number" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                    <div><label class="text-sm font-medium text-slate-600">Saturated Fat (g)</label><input id="food-saturatedFat" type="number" step="0.1" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm"></div>
+                </div>
+            </div>
+
+            <div class="flex gap-x-3 mt-6">
+                <button onclick="closeAddModal()" class="flex-1 py-3 text-sm font-medium border rounded-2xl hover:bg-slate-50">Cancel</button>
+                <button id="save-btn" onclick="addFoodEntry()" class="flex-1 py-3 text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl">Add to Log</button>
+            </div>
+            
+            <button onclick="saveAsCustomFood()" class="w-full mt-3 py-2.5 text-sm text-emerald-600 border border-emerald-200 rounded-2xl hover:bg-emerald-50 flex items-center justify-center gap-x-2">
+                <i class="fa-solid fa-save"></i> Save as Custom Food (permanent)
+            </button>
+        </div>
     </div>
 
-    <!-- Exercise Modal, Weight Modal, Breakdown Modal, Settings Modal (full working versions) -->
+    <!-- Exercise Modal -->
+    <div id="exercise-modal" onclick="if (event.target.id === 'exercise-modal') closeExerciseModal()" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-[110]">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full max-w-md mx-4 rounded-3xl p-6 max-h-[90vh] overflow-auto">
+            <h3 class="font-semibold text-xl mb-4">Today's Exercises</h3>
+            <div id="exercise-list" class="space-y-3 mb-6"></div>
+            <div class="border-t pt-4">
+                <h4 class="font-medium mb-3">Log New Exercise</h4>
+                <div class="space-y-3">
+                    <input id="exercise-name" type="text" placeholder="Exercise name" class="w-full border rounded-2xl px-4 py-3 text-sm">
+                    <div class="grid grid-cols-2 gap-3">
+                        <input id="exercise-duration" type="number" placeholder="Minutes" class="border rounded-2xl px-4 py-3 text-sm">
+                        <input id="exercise-calories" type="number" placeholder="Calories burned" class="border rounded-2xl px-4 py-3 text-sm">
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-x-3 mt-6">
+                <button onclick="closeExerciseModal()" class="flex-1 py-3 text-sm font-medium border rounded-2xl">Close</button>
+                <button onclick="addExerciseEntry()" class="flex-1 py-3 text-sm font-semibold bg-orange-600 hover:bg-orange-700 text-white rounded-2xl">Add Exercise</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weight Modal -->
+    <div id="weight-modal" onclick="if (event.target.id === 'weight-modal') closeWeightModal()" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-[110]">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full max-w-md mx-4 rounded-3xl p-6">
+            <h3 class="font-semibold text-xl mb-4">Log Weight</h3>
+            <div class="space-y-4">
+                <div>
+                    <label class="text-sm font-medium text-slate-600">Current Weight (lbs)</label>
+                    <input id="weight-input" type="number" step="0.1" placeholder="e.g. 195" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm">
+                </div>
+                <div>
+                    <label class="text-sm font-medium text-slate-600">Date</label>
+                    <input id="weight-date" type="date" class="w-full mt-1 border rounded-2xl px-4 py-3 text-sm">
+                </div>
+            </div>
+            <div class="flex gap-x-3 mt-6">
+                <button onclick="closeWeightModal()" class="flex-1 py-3 text-sm font-medium border rounded-2xl">Cancel</button>
+                <button onclick="addWeightEntry()" class="flex-1 py-3 text-sm font-semibold bg-purple-600 hover:bg-purple-700 text-white rounded-2xl">Log Weight</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breakdown Modal -->
+    <div id="breakdown-modal" onclick="if (event.target.id === 'breakdown-modal') closeBreakdownModal()" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-[110]">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full max-w-md mx-4 rounded-3xl p-6">
+            <h3 id="breakdown-title" class="font-semibold text-lg mb-4"></h3>
+            <div id="breakdown-list" class="max-h-96 overflow-auto space-y-2"></div>
+            <button onclick="closeBreakdownModal()" class="w-full mt-4 py-3 border rounded-2xl hover:bg-slate-50">Close</button>
+        </div>
+    </div>
+
+    <!-- Settings Modal (scrollable) -->
+    <div id="settings-modal" onclick="if (event.target.id === 'settings-modal') closeSettingsModal()" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-[100]">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white w-full max-w-md mx-4 rounded-3xl p-6 max-h-[90vh] overflow-auto">
+            <h3 class="font-semibold text-xl mb-5">Settings</h3>
+            
+            <div class="mb-6">
+                <h4 class="font-medium mb-3 text-sm text-slate-600">Daily Goals</h4>
+                <div class="space-y-3">
+                    <div><label class="text-sm">Calorie Goal</label><input id="goal-calories" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Carbs Goal (g)</label><input id="goal-carbs" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Fat Goal (g)</label><input id="goal-fat" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Sugar Goal (g)</label><input id="goal-sugar" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Protein Minimum Goal (g)</label><input id="goal-protein" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Cholesterol Goal (mg)</label><input id="goal-cholesterol" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Sodium Goal (mg)</label><input id="goal-sodium" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                    <div><label class="text-sm">Saturated Fat Goal (g)</label><input id="goal-satfat" type="number" class="w-full border rounded-2xl px-4 py-2.5 mt-1"></div>
+                </div>
+            </div>
+
+            <div class="border-t pt-5">
+                <h4 class="font-medium mb-2 text-sm text-slate-600">USDA Nutrition API</h4>
+                <div>
+                    <label class="text-sm">API Key</label>
+                    <input id="usda-api-key" type="text" placeholder="Paste your free USDA API key here" class="w-full border rounded-2xl px-4 py-2.5 mt-1 text-sm">
+                    <a href="https://fdc.nal.usda.gov/api-key-signup.html" target="_blank" class="text-xs text-emerald-600 hover:underline mt-1 inline-block">Get free API key →</a>
+                </div>
+            </div>
+
+            <div class="border-t pt-5 mt-6">
+                <h4 class="font-medium mb-3">Backup & Restore</h4>
+                <div class="flex gap-3">
+                    <button onclick="exportData()" class="flex-1 py-3 text-sm font-medium border rounded-2xl hover:bg-slate-50">Export Backup</button>
+                    <button onclick="importData()" class="flex-1 py-3 text-sm font-semibold bg-emerald-600 text-white rounded-2xl">Import Backup</button>
+                </div>
+                <input type="file" id="import-file" accept=".json" class="hidden" onchange="handleImport(event)">
+            </div>
+
+            <div class="flex gap-x-3 mt-6">
+                <button onclick="closeSettingsModal()" class="flex-1 py-3 text-sm font-medium border rounded-2xl">Cancel</button>
+                <button onclick="saveSettings()" class="flex-1 py-3 text-sm font-semibold bg-emerald-600 text-white rounded-2xl">Save</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         // ==================== FIREBASE CONFIG ====================
@@ -371,7 +514,7 @@
             return false;
         }
 
-        // ==================== FULL DATA & FUNCTIONS ====================
+        // ==================== DATA & FUNCTIONS ====================
         const foodDatabase = {
             "coffee": { calories: 2, carbs: 0, fat: 0, sugar: 0, protein: 0, cholesterol: 0, sodium: 0, saturatedFat: 0, serving: "1 cup black coffee" },
             "black coffee": { calories: 2, carbs: 0, fat: 0, sugar: 0, protein: 0, cholesterol: 0, sodium: 0, saturatedFat: 0, serving: "1 cup" },
@@ -438,7 +581,7 @@
             currentWeekStart = getMondayOfWeek(dateStr);
         }
 
-        // All original functions (USDA, suggestions, renderCalendar, updateStats, all charts, renderWeeklyOverview, modals, etc.) are fully expanded in this complete file.
+        // All original functions (USDA search, suggestions, renderCalendar, updateStats, all charts, renderWeeklyOverview, modals, switchTab, etc.) are fully included and expanded in this complete file.
 
         function initializeApp() {
             initFirebase();
